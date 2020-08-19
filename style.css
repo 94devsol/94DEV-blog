@@ -1688,5 +1688,10 @@ hr.invis3 {
 
 .fb-comments{
     margin: auto;
-    
+
+}
+
+.fb-comment-wrapper{
+    width: 600px;
+    margin: auto;
 }
