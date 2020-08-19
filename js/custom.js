@@ -73,6 +73,7 @@ let allPosts = [{
     postId: '0001',
     postTitle: 'What is Firebase',
     postBy: 'Kabbo Liate',
+    postByLink: '/auther/rickey_meddi',
     postCategary: "JavaScript",
     postDate: '2019/12/12',
     postContent: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut. labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -83,6 +84,8 @@ let allPosts = [{
     postId: '0002',
     postTitle: 'What is AWS',
     postBy: 'Kabbo Liate',
+    postByLink: '/auther/rickey_meddi',
+
     postCategary: "JavaScript",
     postDate: '2019/12/12',
     postContent: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut. labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -96,6 +99,8 @@ let allPosts = [{
     postTitle: 'What is Serverless',
     postBy: 'Kabbo Liate',
     postCategary: "JavaScript",
+    postByLink: '/auther/rickey_meddi',
+
     postDate: '2019/12/12',
     postContent: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut. labore et dolore magna aliqua. Ut enim ad minim veniam',
     postLink: '/what-is-serverless',
@@ -106,6 +111,8 @@ let allPosts = [{
     postTitle: 'What is NodeJS',
     postCategary: "JavaScript",
     postBy: 'Kabbo Liate',
+    postByLink: '/auther/rickey_meddi',
+
     postDate: '2019/12/12',
     postContent: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut. labore et dolore magna aliqua. Ut enim ad minim veniam',
     postLink: '/what-is-nodejs',
@@ -116,6 +123,8 @@ let allPosts = [{
     postTitle: 'What is NodeJS',
     postCategary: "JavaScript",
     postBy: 'Kabbo Liate',
+    postByLink: '/auther/rickey_meddi',
+
     postDate: '2019/12/12',
     postContent: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut. labore et dolore magna aliqua. Ut enim ad minim veniam',
     postLink: '/what-is-nodejs',
@@ -126,6 +135,8 @@ let allPosts = [{
     postTitle: 'What is NodeJS',
     postCategary: "JavaScript",
     postBy: 'Kabbo Liate',
+    postByLink: '/auther/rickey_meddi',
+
     postDate: '2019/12/12',
     postContent: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut. labore et dolore magna aliqua. Ut enim ad minim veniam',
     postLink: '/what-is-nodejs',
@@ -136,6 +147,8 @@ let allPosts = [{
     postTitle: 'What is NodeJS',
     postCategary: "JavaScript",
     postBy: 'Kabbo Liate',
+    postByLink: '/auther/rickey_meddi',
+
     postDate: '2019/12/12',
     postContent: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dotempor incididunt ut. labore et dolore magna aliqua. Ut enim ad minim veniam',
     postLink: '/what-is-nodejs',
@@ -163,7 +176,7 @@ const appendToHTML = () => {
                                        ${singlePost.postCategary}</span>
                                 <h4><a href=${singlePost.postLink} title="">${singlePost.postTitle}</a></h4>
                                 <span style="color: white;">${singlePost.postDate}</span><br>
-                                <span style="color: white;">by ${singlePost.postBy}</span>
+                             <a href=${singlePost.postByLink}><span style="color: white;">by ${singlePost.postBy}</span></a>
                             </div><!-- end meta -->
                         </div><!-- end shadow-desc -->
                     </div><!-- end shadow -->
@@ -179,8 +192,8 @@ const appendToHTML = () => {
                                         <span class="bg-orange">${singlePost.postCategary}</span>
                                         <h4><a href=${singlePost.postLink} title="">${singlePost.postTitle}</a></h4>
                                         <span style="color: white;">${singlePost.postDate}</span><br>
-                                        <span style="color: white;">by ${singlePost.postBy}</span>
-                                    </div><!-- end meta -->
+                                        <a href=${singlePost.postByLink}><span style="color: white;">by ${singlePost.postBy}</span></a>
+                                        </div><!-- end meta -->
                                 </div><!-- end shadow-desc -->
                             </div><!-- end shadow -->
                         </div><!-- end post-media -->
@@ -197,8 +210,8 @@ const appendToHTML = () => {
                            ${singlePost.postCategary}</span>
                             <h4><a href=${singlePost.postLink} title="">${singlePost.postTitle}</a></h4>
                             <span style="color: white;">${singlePost.postDate}</span><br>
-                            <span style="color: white;">by ${singlePost.postBy}</span>
-                    </div><!-- end meta -->
+                            <a href=${singlePost.postByLink}><span style="color: white;">by ${singlePost.postBy}</span></a>
+                            </div><!-- end meta -->
                 </div><!-- end shadow-desc -->
             </div><!-- end shadow -->
         </div><!-- end post-media -->
